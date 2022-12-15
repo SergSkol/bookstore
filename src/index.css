@@ -25,3 +25,34 @@ code {
     'Courier New',
     monospace;
 }
+
+.navBar {
+  display: flex;
+  align-items: center;
+  padding: 24px 4%;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.navBar h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: #0290ff;
+}
+
+.navMenu {
+  display: flex;
+  flex-grow: 1;
+  list-style: none;
+  gap: 40px;
+  grid-gap: 40px;
+}
+
+.navItem {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  color: #121212;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 1.9px;
+}

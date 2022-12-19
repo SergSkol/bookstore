@@ -1,5 +1,5 @@
 // Actions
-const STATUS = 'bookstore/books/STATUS';
+const STATUS = 'bookstore/categories/STATUS';
 
 const initialState = [];
 

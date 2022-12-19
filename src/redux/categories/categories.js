@@ -1,5 +1,5 @@
 // Actions
-const STATUS = 'STATUS';
+const STATUS = 'bookstore/books/STATUS';
 
 const initialState = [];
 

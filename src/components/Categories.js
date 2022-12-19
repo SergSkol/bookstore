@@ -5,7 +5,7 @@ const Categories = () => {
   const dispatch = useDispatch();
 
   const handleClick = () => {
-    dispatch({ type: 'STATUS' });
+    dispatch({ type: 'bookstore/books/STATUS' });
   };
 
   const status = useSelector((state) => state.category);

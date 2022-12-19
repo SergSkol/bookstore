@@ -7,7 +7,7 @@ const BookItem = (book) => {
   const dispatch = useDispatch();
 
   const handleClick = () => {
-    dispatch({ type: 'REMOVE', id });
+    dispatch({ type: 'bookstore/books/REMOVE', id });
   };
 
   return (

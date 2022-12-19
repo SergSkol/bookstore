@@ -12,7 +12,7 @@ const InputBook = () => {
     const author = document.querySelector('.input-author').value;
 
     const book = { id, title, author };
-    dispatch({ type: 'CREATE', book });
+    dispatch({ type: 'bookstore/books/CREATE', book });
   };
 
   return (

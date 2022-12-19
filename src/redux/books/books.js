@@ -1,6 +1,6 @@
 // Actions
-const CREATE = 'CREATE';
-const REMOVE = 'REMOVE';
+const CREATE = 'bookstore/books/CREATE';
+const REMOVE = 'bookstore/books/REMOVE';
 
 const initialState = [];
 

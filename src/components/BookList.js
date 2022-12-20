@@ -6,9 +6,9 @@ const BookList = () => {
   const books = useSelector((state) => state.book) || [];
 
   return (
-    <ul>
+    <ul className="bookList">
       {books.map((book) => (
-        <li key={book.id} className="bookItem">
+        <li key={book.id}>
           <BookItem
             id={book.id}
             title={book.title}

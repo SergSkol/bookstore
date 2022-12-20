@@ -1,6 +1,6 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
-import { removeBookAction } from '../redux/books/books';
+import { deleteFromAPI } from './API';
 
 const BookItem = (book) => {
   const { id, title, author } = book;
@@ -8,7 +8,7 @@ const BookItem = (book) => {
   const dispatch = useDispatch();
 
   const handleClickRemove = () => {
-    dispatch(removeBookAction(id));
+    dispatch(deleteFromAPI(id));
   };
 
   return (

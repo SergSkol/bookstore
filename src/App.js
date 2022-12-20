@@ -8,14 +8,9 @@ const App = () => (
   <BrowserRouter>
     <Navbar />
     <Routes>
-      <Route
-        path="/"
-        element={<Books />}
-      />
-      <Route
-        path="/categories"
-        element={<Categories />}
-      />
+      <Route path="/" element={<Books />} />
+      <Route path="/categories" element={<Categories />} />
+      <Route path="*" element={<p>Path is not resolved</p>} />
     </Routes>
   </BrowserRouter>
 );

@@ -1,18 +1,9 @@
+const initialState = [];
+
 // Actions
 const CREATE = 'bookstore/books/CREATE';
 const REMOVE = 'bookstore/books/REMOVE';
-
-const initialState = [{
-  id: '1',
-  title: 'The Hunger Games',
-  author: 'Suzanne Collins',
-},
-{
-  id: '2',
-  title: 'Dune',
-  author: 'Frank Herbert',
-},
-];
+const GET = 'bookstore/books/GET';
 
 // Reducer
 export default function bookReducer(state = initialState, action = {}) {
@@ -23,6 +14,8 @@ export default function bookReducer(state = initialState, action = {}) {
       const newState = state.slice();
       return newState.filter((book) => (book.id !== action.id));
     }
+    case GET:
+      return action.books;
     default: return state;
   }
 }
@@ -34,4 +27,8 @@ export function createBookAction(book) {
 
 export function removeBookAction(id) {
   return { type: REMOVE, id };
+}
+
+export function getBooksAction(books) {
+  return { type: GET, books };
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
 import { v4 as uuidv4 } from 'uuid';
-import { createBookAction } from '../redux/books/books';
+import { postToAPI } from './API';
 
 const InputBook = () => {
   const dispatch = useDispatch();
@@ -13,7 +13,7 @@ const InputBook = () => {
     const author = document.querySelector('.input-author').value;
 
     const book = { id, title, author };
-    dispatch(createBookAction(book));
+    dispatch(postToAPI(book));
   };
 
   return (

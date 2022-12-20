@@ -3,7 +3,7 @@ import { useSelector } from 'react-redux';
 import BookItem from './BookItem';
 
 const BookList = () => {
-  const books = useSelector((state) => state.book) || [];
+  const books = useSelector((state) => state.book);
 
   return (
     <ul className="bookList">

@@ -9,8 +9,8 @@ const InputBook = () => {
   const handleClick = (e) => {
     e.preventDefault();
     const id = uuidv4();
-    const title = document.querySelector('.input-title').value;
-    const author = document.querySelector('.input-author').value;
+    const title = document.querySelector('.inputTitle').value;
+    const author = document.querySelector('.inputAuthor').value;
 
     const book = { id, title, author };
     dispatch(postToAPI(book));
@@ -18,26 +18,26 @@ const InputBook = () => {
 
   return (
     <section>
-      <h2>ADD NEW BOOK</h2>
+      <h2 className="inputFormTitle">ADD NEW BOOK</h2>
       <form className="inputFormContainer">
         <input
           type="text"
-          className="input-title"
+          className="input inputTitle"
           placeholder="Book title..."
           name="title"
         />
         <input
           type="text"
-          className="input-author"
+          className="input inputAuthor"
           placeholder="Book author..."
           name="author"
         />
         <button
           type="submit"
-          className="input-submit"
+          className="inputSubmit"
           onClick={handleClick}
         >
-          Add book
+          ADD BOOK
         </button>
       </form>
     </section>

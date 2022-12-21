@@ -15,6 +15,7 @@ const Books = () => {
     <div className="container">
       <div className="inner">
         <BookList />
+        <div className="horizontalDivider" />
         <InputBook />
       </div>
     </div>

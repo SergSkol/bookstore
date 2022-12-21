@@ -8,6 +8,9 @@ const Navbar = () => (
       <li><Link to="/" className="navItem">BOOKS</Link></li>
       <li><Link to="/categories" className="navItem">CATEGORIES</Link></li>
     </ul>
+    <button className="iconButton" type="button">
+      <span className="materialIcons primaryColor">person</span>
+    </button>
   </nav>
 );
 

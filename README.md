@@ -81,7 +81,7 @@ Placeholder
 <!-- LIVE DEMO -->
 
 ## 🚀 Live Demo <a name="live-demo"></a>
-- [Live Demo on Pages](https://sergskol.github.io/bookstore/public/)
+- [Live Demo](https://bookstore-khaki.vercel.app/)
 
 <!-- GETTING STARTED -->
 

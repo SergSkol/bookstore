@@ -36,7 +36,7 @@
 
 # 👁‍🗨 Preview
 
-Placeholder
+![image](https://user-images.githubusercontent.com/106581139/210729689-0eaecf47-98b5-424b-8177-81724f51b9f0.png)
 
 ## 🛠 Built With <a name="built-with"></a>
 

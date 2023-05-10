@@ -14,9 +14,9 @@ const Books = () => {
   return (
     <div className="container">
       <div className="inner">
-        <BookList />
-        <div className="horizontalDivider" />
         <InputBook />
+        <div className="horizontalDivider" />
+        <BookList />
       </div>
     </div>
   );

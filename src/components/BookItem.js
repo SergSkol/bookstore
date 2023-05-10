@@ -3,7 +3,9 @@ import { useDispatch } from 'react-redux';
 import { deleteFromAPI } from './API';
 
 const BookItem = (book) => {
-  const { id, title, author } = book;
+  const {
+    id, title, author, category,
+  } = book;
 
   const dispatch = useDispatch();
 
@@ -15,7 +17,7 @@ const BookItem = (book) => {
     <div className="bookItem">
       <div className="bookContent">
         <div className="bookInfo">
-          <h4 className="bookCategory">Fiction</h4>
+          <h4 className="bookCategory">{category}</h4>
           <h2 className="bookTitle">{title}</h2>
           <h6 className="bookAuthor">{author}</h6>
           <div className="bookActionButtons">

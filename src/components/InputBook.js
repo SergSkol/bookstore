@@ -11,8 +11,11 @@ const InputBook = () => {
     const id = uuidv4();
     const title = document.querySelector('.inputTitle').value;
     const author = document.querySelector('.inputAuthor').value;
+    const category = document.querySelector('.inputCategory').value;
 
-    const book = { id, title, author };
+    const book = {
+      id, title, author, category,
+    };
     dispatch(postToAPI(book));
   };
 
@@ -32,6 +35,20 @@ const InputBook = () => {
           placeholder="Book author..."
           name="author"
         />
+        <select
+          type="text"
+          className="input inputCategory"
+          placeholder="Book category..."
+          name="category"
+        >
+          <option value="Romance">Romance</option>
+          <option value="Mystery">Mystery</option>
+          <option value="Fantasy">Fantasy</option>
+          <option value="Fiction">Fiction</option>
+          <option value="Horror">Horror</option>
+          <option value="Memoir">Memoir</option>
+          <option value="Other">Other</option>
+        </select>
         <button
           type="submit"
           className="inputSubmit"

@@ -8,8 +8,10 @@ const fillBooksArray = (data) => {
   const itemNames = Object.keys(data);
   itemNames.forEach((id) => {
     const itemContent = data[id];
-    const { title, author } = itemContent[0];
-    const book = { id, title, author };
+    const { title, author, category } = itemContent[0];
+    const book = {
+      id, title, author, category,
+    };
     books.push(book);
   });
   return books;
@@ -36,7 +38,7 @@ const postToAPI = (book) => async (dispatch) => {
         item_id: book.id,
         title: book.title,
         author: book.author,
-        category: 'Fiction',
+        category: book.category,
       })
       .then(() => {
         dispatch(createBookAction(book));
